@@ -1,0 +1,263 @@
+/* Для зберігання палітри кольорів макета (текст, фон, виділення) використовуємо CSS-змінні.  */
+:root {
+  --t-color-primery: #2e2f42;
+  --t-color-secondary: #434455;
+  --btn-color-primery: #4d5ae5;
+  --btn-color-secondary: #404bbf;
+  --hero-title-color: #ffffff; /*headers background color & main section color Portfolio*/
+  --background-primery: #ffffff; /*background 
+  main section*/
+  --t-color-solution-title: #ffffff; /* solution H2 color*/
+  --background-secondary: #f4f4fd; /* background ourt team section , filters button background*/
+  --background-hero-footer: #2e2f42;
+  --footer-logo-text-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
+  --t-color-portfolio-title: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--t-color-primery);
+}
+
+/*Heder section*/
+.heder {
+  background-color: var(--background-primery);
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--t-color-primery);
+}
+
+.logo > span {
+  color: var(--btn-color-primery);
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--t-color-primery);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--btn-color-secondary);
+}
+
+.address-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--t-color-secondary);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--btn-color-secondary);
+}
+
+/*HERO section*/
+.hero {
+  background-color: var(--background-hero-footer);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--hero-title-color);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.hero-button {
+  cursor: pointer;
+  color: var(--hero-title-color);
+  text-align: left;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: var(--btn-color-primery);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  background-color: var(--btn-color-primery);
+  border-radius: 4px;
+}
+
+.hero-button:active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: var(--btn-color-secondary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/*SOLUTIONS*/
+.solutions {
+  background-color: var(--background-primery);
+}
+
+.solution-title {
+  color: var(--t-color-solution-title);
+}
+
+.solutions-list-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.solution-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--t-color-secondary);
+}
+
+/*what are we doing*/
+.galeria {
+  background-color: var(--background-primery);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team {
+  background-color: var(--background-secondary);
+}
+
+.team-list-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.team-list-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--t-color-secondary);
+}
+
+.footer {
+  background-color: var(--background-hero-footer);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-logo-text-color);
+}
+
+.footer-logo > span {
+  color: var(--btn-color-primery);
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+}
+
+/*background portfolio*/
+.main-portfolio {
+  background-color: var(--background-primery);
+}
+
+.button {
+  color: var(--btn-color-primery);
+  background-color: var(--background-secondary);
+  cursor: pointer;
+  /* button text */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--hero-title-color);
+  background-color: var(--btn-color-secondary);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio {
+  background-color: var(--background-primery);
+}
+.portfolio-title {
+  color: var(--t-color-portfolio-title);
+}
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  /* identical to box height, or 120% */
+  letter-spacing: 0.02em;
+  color: var(--t-color-primery);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--t-color-secondary);
+}
